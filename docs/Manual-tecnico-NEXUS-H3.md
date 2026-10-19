@@ -312,3 +312,36 @@ La conversación demuestra progreso en publicación y documentación, así como 
 - [ ] Exportar este manual a PDF y guardarlo en docs/.
 - [ ] Conservar el Markdown como versión editable.
 - [ ] Entregar en Moodle el enlace público, el PDF y el diagnóstico espejo.
+
+
+## Apéndice de práctica adicional para el examen
+
+Estas preguntas amplían el banco de práctica. Intenta responderlas antes de leer la solución.
+
+### Pregunta 8 — Diferencia entre composición y herencia
+**Pregunta:** ¿Por qué el diseño usa un Inventario dentro de Cadete en lugar de declarar Cadete como derivada de Inventario?
+
+**Respuesta razonada:** un cadete tiene un inventario, pero no es un inventario. La composición representa correctamente esa relación y permite que Cadete delegue el almacenamiento a Inventario. La herencia debe representar especialización, como Robot derivado de Personaje.
+
+### Pregunta 9 — Cálculo de daño y tipos numéricos
+**Pregunta:** Un robot con 30 de energía y defensa activa recibe 7 de daño. ¿Qué energía conserva? ¿Por qué?
+
+**Respuesta razonada:** el código usa división entera: 7 / 2 da 3, así que la energía pasa a 27. La parte fraccionaria se descarta. Para aceptar daño fraccionario habría que revisar los tipos de datos y las reglas de energía en todo el diseño, no solo cambiar una línea.
+
+### Pregunta 10 — Detectar un defecto lógico
+**Pregunta:** En Inventario.Agregar(), ¿qué error se introduce si la condición Count >= capacidad cambia a Count > capacidad?
+
+**Respuesta razonada:** cuando Count es exactamente igual a la capacidad, la condición > es falsa y el objeto se agrega. La colección puede exceder el límite en una unidad. La condición >= es necesaria para impedir que se agregue cuando ya está lleno.
+
+## Comprobación individual antes del Hito 3
+
+Para comprobar que comprendes el proyecto sin depender del manual:
+
+1. Explica de memoria el flujo desde Program.Main() hasta el menú de Juego.
+2. Dibuja la jerarquía Personaje → Cadete, Enemigo y Robot.
+3. Predice el resultado de una llamada virtual antes de ejecutar el programa.
+4. Sigue manualmente los cambios de energía y la cantidad de objetos del inventario.
+5. Escribe una consulta LINQ equivalente a un recorrido con foreach e if.
+6. Explica una posible mejora y cómo comprobarías que no rompe el comportamiento.
+
+**Nota de evidencia:** las respuestas de este manual son material de estudio asistido. Para que el diagnóstico refleje tu aprendizaje personal, resuelve estos ejercicios por tu cuenta y conserva tus razonamientos, incluidos los errores que luego corrijas.
