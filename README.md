@@ -184,3 +184,9 @@ Proyecto académico de Programación Orientada a Objetos.
 - `POO Nexus/POO Nexus.csproj`: configuración del proyecto y framework objetivo.
 - `POO Nexus.slnx`: archivo de solución de Visual Studio.
 - `README.md`: descripción, instrucciones de ejecución y manual técnico de estudio.
+
+
+## Documentación técnica del Hito 3
+
+- [Manual técnico y preparación para el examen H3](docs/Manual-tecnico-NEXUS-H3.md): arquitectura, clases, POO, herencia, polimorfismo, colecciones, análisis de ejecución, preguntas razonadas y diagnóstico del proceso de aprendizaje.
+- El manual en PDF debe guardarse también en `docs/Manual-tecnico-NEXUS-H3.pdf` para facilitar su consulta sin conexión. Después de copiar el PDF a la carpeta local del repositorio, registra el cambio en GitHub Desktop con un commit y pulsa **Push origin**.
