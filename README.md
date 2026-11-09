@@ -186,7 +186,41 @@ Proyecto académico de Programación Orientada a Objetos.
 - `README.md`: descripción, instrucciones de ejecución y manual técnico de estudio.
 
 
-## Documentación técnica del Hito 3
+## Documentación del proyecto
 
-- [Manual técnico y preparación para el examen H3](docs/Manual-tecnico-NEXUS-H3.md): arquitectura, clases, POO, herencia, polimorfismo, colecciones, análisis de ejecución, preguntas razonadas y diagnóstico del proceso de aprendizaje.
-- El manual en PDF debe guardarse también en `docs/Manual-tecnico-NEXUS-H3.pdf` para facilitar su consulta sin conexión. Después de copiar el PDF a la carpeta local del repositorio, registra el cambio en GitHub Desktop con un commit y pulsa **Push origin**.
+La documentación se encuentra en la carpeta [docs](docs/):
+
+- [Diseño del juego](docs/diseno-del-juego.md): concepto, reglas, menú, recursos y objetivos.
+- [Arquitectura actual](docs/arquitectura-actual.md): componentes, responsabilidades, relaciones y flujo del programa.
+- [Arquitectura propuesta](docs/arquitectura-propuesta.md): organización modular y mejoras futuras.
+- [Modelo de datos propuesto](docs/modelo-de-datos-propuesto.md): entidades actuales y esquema conceptual futuro; NEXUS todavía no utiliza base de datos.
+- [Análisis técnico](docs/analisis-tecnico.md): fortalezas, limitaciones y pruebas recomendadas.
+- [Manual técnico y preparación para el Hito 3](docs/Manual-tecnico-NEXUS-H3.md): guía de estudio para comprender y explicar el código.
+- [Evidencias](docs/evidencias/README.md): ubicación para bocetos, diagramas y capturas reales.
+
+## Estructura documental
+
+~~~text
+NEXUS/
+├── README.md
+├── .gitignore
+├── POO Nexus/
+│   ├── Program.cs
+│   └── POO Nexus.csproj
+├── POO Nexus.slnx
+└── docs/
+    ├── diseno-del-juego.md
+    ├── arquitectura-actual.md
+    ├── arquitectura-propuesta.md
+    ├── modelo-de-datos-propuesto.md
+    ├── analisis-tecnico.md
+    ├── Manual-tecnico-NEXUS-H3.md
+    └── evidencias/
+        └── README.md
+~~~
+
+El código fuente conserva su organización actual. Las propuestas de arquitectura modular y persistencia son mejoras futuras, no funcionalidades implementadas.
+
+## Evidencias y PDF
+
+Guardar los diagramas y capturas reales en docs/evidencias/. Si se solicita una copia PDF del manual, exportar docs/Manual-tecnico-NEXUS-H3.md a PDF y añadir el archivo resultante a docs/Manual-tecnico-NEXUS-H3.pdf.
