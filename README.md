@@ -216,7 +216,9 @@ NEXUS/
     ├── analisis-tecnico.md
     ├── Manual-tecnico-NEXUS-H3.md
     └── evidencias/
-        └── README.md
+        ├── README.md
+        ├── diagrama-clases.md
+        └── flujo-principal.md
 ~~~
 
 El código fuente conserva su organización actual. Las propuestas de arquitectura modular y persistencia son mejoras futuras, no funcionalidades implementadas.
